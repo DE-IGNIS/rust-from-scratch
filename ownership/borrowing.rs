@@ -1,3 +1,8 @@
+// ---------------------------------------------------------------
+// borrowing.rs
+// Explains immutable and mutable borrowing in Rust.
+// ---------------------------------------------------------------
+
 fn main() {
     // -----------------------------------------------------------
     // 1. Immutable borrow – read‑only access
@@ -31,6 +36,7 @@ fn main() {
 
     // -----------------------------------------------------------
     // 3. Mixing immutable and mutable borrows – what is NOT allowed
+    // You cannot have a mutable borrow if an immutable borrow exists.
     // -----------------------------------------------------------
     let mut data = vec![1, 2, 3];
 
