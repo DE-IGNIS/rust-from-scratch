@@ -1,114 +1,64 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
-</p>
+# Rust Learning Repository
 
-<h3 align="center">Project Title</h3>
+Welcome to the Rust Learning Repository! This project serves as a structured guide and reference for learning Rust, progressing from basic syntax to intermediate concepts.
 
-<div align="center">
+Each file in this repository is designed to be a simple, educational, and runnable Rust example.
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+## Table of Contents
 
-</div>
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+  - [Basics (`basics/`)](#basics-basics)
+  - [Ownership & Borrowing (`ownership/`)](#ownership--borrowing-ownership)
+  - [Intermediate Concepts (`intermediate/`)](#intermediate-concepts-intermediate)
+- [How to Run the Examples](#how-to-run-the-examples)
 
----
+## Getting Started
 
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
+To get started, ensure you have Rust installed on your machine. You can install Rust using `rustup`:
 
-## 📝 Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
-
-## 🧐 About <a name = "about"></a>
-
-Write about 1-2 paragraphs describing the purpose of your project.
-
-## 🏁 Getting Started <a name = "getting_started"></a>
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-### Installing
+## Project Structure
 
-A step by step series of examples that tell you how to get a development env running.
+The project is organized into three main categories:
 
-Say what the step will be
+### Basics (`basics/`)
+These examples cover fundamental Rust syntax and concepts.
+- **`hello.rs`**: A simple "Hello World" program demonstrating basic syntax and comments.
+- **`ops.rs`**: Covers basic mathematical, boolean, and bitwise operations.
+- **`variables.rs`**: Explains primitive (integers, floats, booleans, chars) and compound (tuples, arrays) data types.
+- **`tuples.rs`**: Detailed examples on creating, using, and destructuring tuples.
+- **`arrays.rs`**: Demonstrates fixed-size arrays and slices.
+- **`control_flow.rs`**: Covers basic control flow structures like `if`/`else`, `loop`, `while`, and `for`.
+- **`functions.rs`**: Explains how to define functions, return values, and use expressions (like blocks).
 
-```
-Give the example
-```
+### Ownership & Borrowing (`ownership/`)
+These examples delve into Rust's unique memory management system.
+- **`ownership.rs`**: Introduces the concept of ownership, moving data, and memory management without garbage collection.
+- **`move_copy.rs`**: Explains the difference between types that `Copy` (like primitives) and types that move (like `String`), as well as explicit copying using `Clone`.
+- **`borrowing.rs`**: Covers immutable and mutable borrowing, and the rules around references.
+- **`references_and_dereferencing.rs`**: Shows how to use references (`&`, `&mut`), dereferencing (`*`), and briefly introduces raw pointers and struct borrowing.
+- **`slices.rs`**: Demonstrates string slices (`&str`), array/vector slices (`&[T]`), and how they interact with memory.
+- **`stack_vs_heap.rs`**: Explains the difference between stack and heap allocation, showing what goes where and why.
 
-And repeat
+### Intermediate Concepts (`intermediate/`)
+These examples introduce more complex Rust features for structuring larger applications.
+- **`enums.rs`**: Demonstrates defining enums and using `match` for control flow and pattern matching.
 
-```
-until finished
-```
+## How to Run the Examples
 
-End with an example of getting some data out of the system or using it for a little demo.
+Every file is a standalone Rust program. You can compile and run them directly using `rustc`:
 
-## 🔧 Running the tests <a name = "tests"></a>
+1. Compile the file (e.g., `hello.rs`):
+   ```bash
+   rustc basics/hello.rs
+   ```
+2. Run the resulting executable:
+   ```bash
+   ./hello
+   ```
 
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+Alternatively, you can use `rust-script` or copy the contents into a `cargo` project if you prefer a more robust environment, but `rustc` is the simplest way to run these examples as intended.

@@ -1,3 +1,8 @@
+// ---------------------------------------------------------------
+// ownership.rs
+// Explains the concept of ownership in Rust.
+// ---------------------------------------------------------------
+
 fn main() {
     // -----------------------------------------------------------
     // 1. Every value has a single owner.
@@ -16,6 +21,7 @@ fn main() {
 
     // -----------------------------------------------------------
     // 3. Borrowing (read‑only reference)
+    // Borrowing does not take ownership. It lets us access data.
     // -----------------------------------------------------------
     let borrowed = &new_owner;               // a shared reference
     println!("borrowed = {}", borrowed);    // we can still read it
