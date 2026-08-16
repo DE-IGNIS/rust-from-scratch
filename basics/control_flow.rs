@@ -6,7 +6,6 @@ fn main() {
     // 1. Control flow
     // -----------------------
 
-    // ---- if / else -------------------------------------------------
     if bool_c && int_a > 0 {
         println!("Both bool_c is true and int_a is positive.");
     } else if int_a == 0 {

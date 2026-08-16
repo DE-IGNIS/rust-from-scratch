@@ -1,6 +1,6 @@
-# Rust Learning Repository
+# Learning Rust Repository
 
-Welcome to the Rust Learning Repository! This project serves as a structured guide and reference for learning Rust, progressing from basic syntax to intermediate concepts.
+Welcome to the Learning Rust Repository! This project serves as a structured guide and reference for learning Rust, progressing from basic syntax to intermediate concepts.
 
 Each file in this repository is designed to be a simple, educational, and runnable Rust example.
 

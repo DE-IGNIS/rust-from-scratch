@@ -40,7 +40,6 @@ fn main() {
     // -----------------------------------------------------------
     let mut data = vec![1, 2, 3];
 
-    // Uncomment the lines below to see the compiler error.
     // ---------------------------------------------------------
     // let immut_ref = &data;      // ok: immutable borrow
     // let mut_ref = &mut data;    // ❌ error: cannot borrow `data` as mutable
